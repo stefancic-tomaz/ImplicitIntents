@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#3F51B5"
+        app:title="@string/app_name"
+        app:titleTextColor="@android:color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Website Section -->
+            <EditText
+                android:id="@+id/website_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_text_uri"
+                android:inputType="textUri"
+                android:autofillHints="" />
+
+            <Button
+                android:id="@+id/open_website_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:onClick="openWebsite"
+                android:text="@string/button_uri" />
+
+            <!-- Location Section -->
+            <EditText
+                android:id="@+id/location_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_text_loc"
+                android:inputType="textPostalAddress"
+                android:autofillHints="" />
+
+            <Button
+                android:id="@+id/open_location_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:onClick="openLocation"
+                android:text="@string/button_loc" />
+
+            <!-- Share Text Section -->
+            <EditText
+                android:id="@+id/share_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_text_share"
+                android:inputType="textMultiLine"
+                android:autofillHints="" />
+
+            <Button
+                android:id="@+id/share_text_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:onClick="shareText"
+                android:text="@string/button_share" />
+
+            <!-- Phone Call Section -->
+            <EditText
+                android:id="@+id/phone_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_text_phone"
+                android:inputType="phone"
+                android:autofillHints="" />
+
+            <Button
+                android:id="@+id/call_phone_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:onClick="callPhone"
+                android:text="@string/button_phone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

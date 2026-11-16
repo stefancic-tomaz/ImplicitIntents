@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Implicit Intents</string>
+
+    <string name="edit_text_uri">https://developer.android.com</string>
+    <string name="button_uri">Open Website</string>
+
+    <string name="edit_text_loc">School Centre Nova Gorica</string>
+    <string name="button_loc">Open Location</string>
+
+    <string name="edit_text_share">Na ŠCNG razvijamo znanje za prihodnost.</string>
+    <string name="button_share">Share This Text</string>
+
+    <string name="edit_text_phone">+386 5 6205 600</string>
+    <string name="button_phone">Call Phone</string>
+</resources>
